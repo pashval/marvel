@@ -1,0 +1,22 @@
+.footer {
+    background-color: #000;
+    &-wrapper {
+        max-width: 1230px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        height:80px;
+    }
+    &__logo {
+        padding-left: 15px;
+        img {
+            width: 100px;
+        }
+    }
+    &__copyr {
+        padding-right: 15px;
+        color: white;
+    }
+}

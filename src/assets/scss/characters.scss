@@ -1,0 +1,214 @@
+.marvel-back {
+    background-image:linear-gradient(rgba(89, 89, 89, 0.7), rgba(92, 92, 92, 0.7)), url(../../../src/assets/img/1835991.jpg);
+    min-height: max-content;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.teams {
+    padding-bottom: 40px;
+}
+.comcevenetimg {
+    width: 280px;
+}
+.marvel-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    .title {
+        font-family: 'Marvel';
+        margin: 20px;
+        color: white;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .title_ch {
+            text-align: center;
+            padding: 0;
+            margin: 10px;
+            font-size: 50px;
+            height: 40px;
+            letter-spacing: 1px;
+            line-height: 100%;
+            align-items: center;
+        }
+      }
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 850px;
+        width: 100%;
+        input {
+            max-width: 550px;
+            width: 100%;
+            height: 50px;
+            border-radius: 15px;
+            padding-left: 20px; 
+            font-size: 20px;
+            &:hover {
+                outline: none !important;
+                border: 2px gray solid;
+            }
+            &:focus {
+                outline: none !important;
+                border: 2px gray solid;
+            }
+        }
+        div {
+            color: white;
+            background-color: black;
+            font-family: 'Marvel';
+            border: none;
+            border-radius: 5px;
+            padding: 10px 5px 5px;
+            cursor: pointer;
+            margin-left: 15px;
+            text-transform: uppercase;
+            transition: 0.5s ease-in-out;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+            background-color: red;
+            }
+        }
+    }
+    .results {
+        margin-top: 30px;
+        display: grid;
+        grid-template-areas:
+        "items items items";
+        grid-column-gap: 15px;
+        .itemC {
+            background-color: black;
+            width: 300px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            a {
+                .img_center {
+                    width: 300px;
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    border-bottom: red 5px solid;
+                    .img_sear {
+                        width: 300px;
+                        height: 300px;
+                    } 
+                }
+                .background {
+                    padding: 15px;
+                    height: 60px;
+                    background-image: linear-gradient(to bottom, red 50%, transparent 50%);
+                    background-size: 100% 200%;
+                    background-position: bottom;
+                    transition: background-position 0.5s ease-in-out;
+                    color: black;
+                    h3 {
+                        margin: 0;
+                        color: white;
+                    }
+                }  
+            }
+        }
+        .itemC:hover,
+        .itemC:focus {
+            a {
+                .background {
+                    background-position: top;
+                }
+            }
+        }
+        .items {
+            background-color: black;
+            width: 300px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+            a {
+                .img_center {
+                    width: 300px;
+                    height: 450px;
+                    display: flex;
+                    justify-content: center;
+                    border-bottom: red 5px solid;
+                    .img_sear {
+                        width: 300px;
+                        height: 280px;
+                    } 
+                }
+                .background {
+                    padding: 15px;
+                    height: 60px;
+                    background-image: linear-gradient(to bottom, red 50%, transparent 50%);
+                    background-size: 100% 200%;
+                    background-position: bottom;
+                    transition: background-position 0.5s ease-in-out;
+                    color: black;
+                    h3 {
+                        margin: 0;
+                        color: white;
+                    }
+                }  
+            }
+        }
+        .items:hover,
+        .items:focus {
+            a {
+                .background {
+                    background-position: top;
+                }
+            }
+        }
+    }
+  }
+
+  .comic_link {
+    text-decoration: none;
+    color: black;
+  }
+  .items {
+    width: 300px;
+  }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 460px) {
+
+  .title_ch {
+    font-size: 31px !important;
+    margin-bottom: 0!important;
+}}
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    
+    .form {
+        input {
+            margin-left: 15px;
+        }
+        div {
+            margin-right: 15px;
+            font-size: 20px !important;
+        }
+        }
+    .results {
+            grid-template-areas:
+            "items" !important; }
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1100px) {
+        .form {
+            input {
+                margin-left: 15px;
+            }
+            div {
+                margin-right: 15px;
+                font-size: 20px !important;
+            }
+            }
+        .results {
+                grid-template-areas:
+                "items items" !important; }
+        }

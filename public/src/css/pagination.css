@@ -1,0 +1,46 @@
+.img {
+  height: auto;
+  width: 300px;
+}
+
+.img_center {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-container {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.paginate-buttons {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+.paginate-buttons:hover {
+  background-color: red;
+}
+
+.active-page {
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+}
+
+.active-page:hover {
+  background-color: red;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .paginate-buttons {
+    height: 30px;
+    width: 30px;
+  }
+}

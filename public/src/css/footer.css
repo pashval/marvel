@@ -1,0 +1,26 @@
+.footer {
+  background-color: #000;
+}
+
+.footer-wrapper {
+  max-width: 1230px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 80px;
+}
+
+.footer__logo {
+  padding-left: 15px;
+}
+
+.footer__logo img {
+  width: 100px;
+}
+
+.footer__copyr {
+  padding-right: 15px;
+  color: white;
+}
